@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Locale;
 public class DateTimeUtils {
     static DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
-    static DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm");
+    static DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
     /**
      * Vypište aktuální datum ve formátu den.měsíc.rok hodina:minuta (např. 12.12.2023 14:41)
      *
@@ -108,10 +108,6 @@ public class DateTimeUtils {
         }
         return list;
     }
-
-
-
-
     /**
      * Najděte a vypište první pondělí po Vánocích 24.12.2023
      *
